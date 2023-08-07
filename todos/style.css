@@ -1,0 +1,123 @@
+
+:root {
+    --lightblue: #33ccff;
+    --middleblue: #00ace6;
+    --darkblue: #0086b3;
+    --white: whitesmoke;
+    --red: #e60000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+
+h3 {
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    font-size: 3vw;
+    line-height: 3vw;
+    text-align: center;
+    margin: 20vh auto 2vh auto;
+    font-family: firaSansSansation;
+    font-weight: 900;
+}
+
+/*Form and elements*/
+form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items: center;
+    width: 50%;
+    box-shadow: 0 3px 5px var(--lightblue), 
+                0 0 2.5px var(--darkblue);
+    margin: 0 25%;
+}
+
+input{
+    height: 4vh;
+    border: none;
+    font-size: 3vh;
+    line-height: 4vh;
+    border-radius: 2px;
+}
+
+input:first-child {
+    width: 70%;
+}
+input:first-child:focus {
+    border: transparent;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input:nth-child(2) {
+    width: 30%;
+}
+
+input[type="submit"] {
+    background-color: var(--middleblue);
+    color: var(--white);  
+}
+
+/*Table*/
+table {
+    width: 50%;
+    box-shadow: 0 3px 5px var(--lightblue), 
+                0 0 2.5px var(--darkblue);
+    margin: 0 25%; 
+    margin-top: 4vh;
+}
+
+table tr {
+    border-bottom: 1px solid var(--middleblue);
+}
+
+table td {
+    min-height: 4vh;
+    font-size: 3vh;
+    line-height: 4vh;
+    border-radius: 2px;
+    border-bottom: 1px solid var(--middleblue);
+}
+
+table caption {
+    font-size: 2.5vw;
+    font-weight: 700;
+    font-family: firaSansSansation;
+}
+
+/*Button*/
+table td a {
+    text-decoration: none;
+    height: 100%;
+    min-width: 6vw;
+    color: var(--white);
+    font-size: inherit;
+    border: none;
+    background-color: var(--red);
+    border-radius: 2.5px;
+}
+
+.update {
+    background-color: var(--middleblue);
+}
+
+/*Fonts*/
+
+@font-face {
+    font-family: firaSansSansation;
+    src: url('/assets/SansationLight.eot');
+    src: local(firaSansSansation), url('/assets/SansationLight.woff') format('woff'), url('/assets/SansationLight.ttf') format('truetype');
+}
